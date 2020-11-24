@@ -19,11 +19,7 @@ header {
     height: 170px;
     z-index: 1;
 }
-/* Logo und namen stylen */
-.header-section{
-    display: inline-block;
-    width: 100%;
-}
+
 /* Name stylen und anordnen */
 .firstname{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,17 +29,6 @@ header {
     padding-top: 1em;   
 }
 /* Logo anordnen */
-.logo{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 1em;
-    width: 10%;
-    background-color: #D3D3D3;
-    border: 1px solid #3d3c3c;
-    border-radius: 1em;
-    padding: 1.2em;
-}
 
 /* Hauptteil stylen */
 main{
@@ -56,16 +41,6 @@ main{
 
 
 /* nav im footer stylen, anpassen */
-.bottom{
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    width: 100%;
-    padding-top: 3em;
-    padding-left: 20%;
-    padding-bottom: 2em;
-    
-}
 
 @media only screen and (max-width: 768px){
 
