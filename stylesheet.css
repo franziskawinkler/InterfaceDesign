@@ -1,0 +1,155 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    line-height: 1;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/*Grundeinstellungen header, Hintergrundfarbe, Schriftart...position fixed und z-index */
+header {
+    background-color:  rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    height: 170px;
+    z-index: 1;
+}
+/* Logo und namen stylen */
+.header-section{
+    display: inline-block;
+    width: 100%;
+}
+/* Name stylen und anordnen */
+.firstname{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+    padding-top: 1em;   
+}
+/* Logo anordnen */
+.logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+    width: 10%;
+    background-color: #D3D3D3;
+    border: 1px solid #3d3c3c;
+    border-radius: 1em;
+    padding: 1.2em;
+}
+
+/* Hauptteil stylen */
+main{
+    overflow: auto;
+    background-color: #D3D3D3;
+    padding-top: 200px;
+    padding-left: 8em;
+    width: 100%;
+}
+
+
+/* nav im footer stylen, anpassen */
+.bottom{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 100%;
+    padding-top: 3em;
+    padding-left: 20%;
+    padding-bottom: 2em;
+    
+}
+
+@media only screen and (max-width: 768px){
+
+.header{
+    height: 100px;
+}
+.firstname{
+    font-size: 2em;  
+    padding-top: 0;   
+}
+.logo{
+    margin-top: 0;
+    width: 12%;
+    padding: 0.5em;
+}
+
+main section{
+height: 100%;
+}
+
+main{
+    padding-left:1em;
+}
+.bottom{
+    padding-left: 0%;
+    position: relative;
+    padding-top: 6em;
+}
+.bottom nav{
+    width: 20%;
+    margin-top: 3em;
+}
+
+.header-section{
+    position: relative;
+   bottom:3em;
+}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .box {
+        width: 350px;
+    
+    }
+    .header-section{
+         position: relative;
+        bottom:3em;
+    }
+    .header{
+        height: 100px;
+    }
+    .firstname{
+        font-size: 2em;  
+        padding-top: 0;   
+    }
+    .logo{
+        margin-top: 0.5em;
+        width: 10%;
+        padding: 0.8em;
+    }
+    main{
+        overflow: auto;
+        background-color: #D3D3D3;
+        padding-top: 140px;
+        padding-left: 0;
+        width: 100%;
+    }
+    .bottom{
+        padding-left: 0%;
+        position: relative;
+        padding-top: 3em;
+    }
+   
+
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .box {
+        width: 300px;
+    }
+.header-section{
+    position: relative;
+    bottom: 5em;
+}
+
+}
