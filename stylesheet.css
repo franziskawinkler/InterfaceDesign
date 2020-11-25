@@ -30,11 +30,7 @@ header {
 
 /* Hauptteil stylen */
 main{
-    overflow: auto;
     background-color: #D3D3D3;
-    padding-top: 200px;
-    padding-left: 8em;
-    width: 100%;
 }
 
 
@@ -58,9 +54,6 @@ main{
     main{
         overflow: auto;
         background-color: #D3D3D3;
-        padding-top: 140px;
-        padding-left: 0;
-        width: 100%;
     }
 
 
