@@ -21,12 +21,10 @@ header {
 }
 
 /* Name stylen und anordnen */
-.firstname{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3em;
-    text-align: center;
+.human{
     position: relative;
-    padding-top: 1em;   
+    height: 100%;
+    width: 100%; 
 }
 /* Logo anordnen */
 
@@ -44,62 +42,18 @@ main{
 
 @media only screen and (max-width: 768px){
 
-.header{
-    height: 100px;
-}
-.firstname{
-    font-size: 2em;  
-    padding-top: 0;   
-}
-.logo{
-    margin-top: 0;
-    width: 12%;
-    padding: 0.5em;
-}
-
-main section{
-height: 100%;
-}
-
-main{
-    padding-left:1em;
-}
-.bottom{
-    padding-left: 0%;
-    position: relative;
-    padding-top: 6em;
-}
-.bottom nav{
-    width: 20%;
-    margin-top: 3em;
-}
-
-.header-section{
-    position: relative;
-   bottom:3em;
-}
+    .human{
+        position: relative;
+        height: 100%;
+        width: 100%; 
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .box {
-        width: 350px;
-    
-    }
-    .header-section{
-         position: relative;
-        bottom:3em;
-    }
-    .header{
-        height: 100px;
-    }
-    .firstname{
-        font-size: 2em;  
-        padding-top: 0;   
-    }
-    .logo{
-        margin-top: 0.5em;
-        width: 10%;
-        padding: 0.8em;
+    .human{
+        position: relative;
+        height: 100%;
+        width: 100%; 
     }
     main{
         overflow: auto;
@@ -108,23 +62,15 @@ main{
         padding-left: 0;
         width: 100%;
     }
-    .bottom{
-        padding-left: 0%;
-        position: relative;
-        padding-top: 3em;
-    }
-   
+
 
 }
 
 @media only screen and (min-width: 1024px) {
     /* For desktop: */
-    .box {
-        width: 300px;
+    .human{
+        position: relative;
+        height: 100%;
+        width: 100%; 
     }
-.header-section{
-    position: relative;
-    bottom: 5em;
-}
-
 }
