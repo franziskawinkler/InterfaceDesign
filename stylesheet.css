@@ -23,8 +23,8 @@ header {
 /* Name stylen und anordnen */
 .human{
     position: relative;
-    height: 100%;
-    width: 100%; 
+    height: 1920px;
+    width:1080px; 
 }
 /* Logo anordnen */
 
@@ -52,8 +52,8 @@ main{
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
     .human{
         position: relative;
-        height: 100%;
-        width: 100%; 
+        height: 1024px;
+        width: 768px; 
     }
     main{
         overflow: auto;
