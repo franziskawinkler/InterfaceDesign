@@ -1,69 +1,26 @@
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1em;
-    line-height: 1;
-    margin: 0rem;
-    box-sizing: border-box;
+    background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
-html {
-    overflow-x: hidden;
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
 }
 
-/*Grundeinstellungen header, Hintergrundfarbe, Schriftart...position fixed und z-index */
-header {
-    background-color:  rgba(0, 0, 0, 0.8);
-    color: rgb(255, 255, 255);
-    position: fixed;
-    width: 100%;
-    height: 170px;
-    z-index: 1;
+.invisible {
+    display: none;
 }
 
-/* Name stylen und anordnen */
-.human{
-    position: relative;
-    height: 1920px;
-    width:1080px; 
-}
-/* Logo anordnen */
-
-/* Hauptteil stylen */
-main{
-    background-color: #D3D3D3;
-}
-
-
-/* nav im footer stylen, anpassen */
-
-@media only screen and (max-width: 768px){
-
-    .human{
-        position: relative;
-        height: 100%;
-        width: 100%; 
-    }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .human{
-        position: relative;
-        height: 1024px;
-        width: 768px; 
-    }
-    main{
-        overflow: auto;
-        background-color: #D3D3D3;
-    }
-
-
-}
-
-@media only screen and (min-width: 1024px) {
-    /* For desktop: */
-    .human{
-        position: relative;
-        height: 100%;
-        width: 100%; 
-    }
+.error{
+    font-family: 'Raleway';
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
 }
