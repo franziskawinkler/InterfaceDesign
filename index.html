@@ -6,13 +6,19 @@
           content="width=device-width,
                initial-scale=1,
                minimum-scale=1">
-    <title>visionary</title>
+    <title>Deine Welt</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
    <script src="main.js"></script>
 </head>
 <body>
     <main>
-        <p id='error-message' class="error"></p>
+        <div class="error-container">
+            <p id='error-message' class="error invisible"></p>
+            <audio id="audiofile">
+                <source src="sound/error_sound.ogg" type="audio/ogg">
+                <source src="sound/error_sound.mp3" type="audio/mpeg"/>
+            </audio>
+        </div>
         <div class="imgbox">
             <img id="Mensch" class="center-fit" src="img/Mensch.jpg" alt="Mensch">
             <img id="Hund" class="invisible center-fit" src="img/Hund.jpg" alt="Hund">

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', init);
 const animals = ['Hund', 'Vogel', 'Insekt'];
 function init() {
+    
     document.addEventListener('keyup', event => {
         if (event.code === 'Space') {
             toggleAnimal('Hund');
@@ -42,17 +43,24 @@ function showAnimal(animalElement) {
 }
 
 function showError(animalsShown) {
+    document.getElementById('audiofile').play();
+
     var errorMessage = document.getElementById("error-message");
-    errorMessage.textContent = 'Es befinden sich zu viele Tiere auf dem Interaktionspunkt! ';
+    errorMessage.classList.remove("invisible");
+    errorMessage.innerHTML = 'Es befinden sich zu viele Tiere auf dem Interaktionspunkt! <br>';
 
     animalsShown.forEach(function(animal) {
-        errorMessage.textContent += animal + ' wird immernoch angezeigt. Stelle die Figur nochmal auf den Interaktionspunkt, sodass du die Perspektive wechseln kannst.';
+        errorMessage.innerHTML += animal + ' wird immernoch angezeigt.<br> Stelle die Figur nochmal auf den Interaktionspunkt, sodass du die Perspektive wechseln kannst.';
     });
+
 }
+
+    
 
 function hideAnimal(animalElement) {
     var errorMessage = document.getElementById("error-message");
-    errorMessage.textContent = '';
+    errorMessage.innerHTML = '';
+    errorMessage.classList.add("invisible");
 
     var Mensch = document.getElementById("Mensch");
     Mensch.classList.toggle("invisible");
