@@ -47,7 +47,7 @@ function showError(animalsShown) {
 
     var errorMessage = document.getElementById("error-message");
     errorMessage.classList.remove("invisible");
-    errorMessage.innerHTML = 'Es befinden sich zu viele Tiere auf dem Interaktionspunkt! <br>';
+    errorMessage.innerHTML = 'Es befinden sich zu viele Tiere auf dem Interaktionsplattform! <br>';
 
     animalsShown.forEach(function(animal) {
         errorMessage.innerHTML += animal + ' wird immernoch angezeigt.<br> Stelle die Figur nochmal auf den Interaktionspunkt, sodass du die Perspektive wechseln kannst.';
