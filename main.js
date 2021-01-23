@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', init);
-const animals = ['Hund', 'Vogel', 'Insekt'];
+const animals = ['Hund', 'Vogel', 'Ameise'];
 function init() {
     
     document.addEventListener('keyup', event => {
@@ -10,7 +10,7 @@ function init() {
             toggleAnimal('Vogel');
         }
         if (event.code === 'ArrowLeft') {
-            toggleAnimal('Insekt');
+            toggleAnimal('Ameise');
         }
     })
 }
