@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', init);
 const animals = ['Hund', 'Vogel', 'Ameise'];
 function init() {
-    
+
     document.addEventListener('keyup', event => {
         if (event.code === 'Space') {
             toggleAnimal('Hund');
@@ -25,7 +25,7 @@ function toggleAnimal(animal) {
 
 function showAnimal(animalElement) {
     var animalsShown = [];
-    animals.forEach(function(animal) {
+    animals.forEach(function (animal) {
 
         var animalsElement = document.getElementById(animal);
         if (!animalsElement.classList.contains('invisible')) {
@@ -49,13 +49,11 @@ function showError(animalsShown) {
     errorMessage.classList.remove("invisible");
     errorMessage.innerHTML = 'Es befinden sich zu viele Tiere auf dem Interaktionsplattform! <br>';
 
-    animalsShown.forEach(function(animal) {
+    animalsShown.forEach(function (animal) {
         errorMessage.innerHTML += animal + ' wird immernoch angezeigt.<br> Stelle die Figur nochmal auf den Interaktionspunkt, sodass du die Perspektive wechseln kannst.';
     });
 
 }
-
-    
 
 function hideAnimal(animalElement) {
     var errorMessage = document.getElementById("error-message");
